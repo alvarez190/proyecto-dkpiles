@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+header button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main>a {
+    position: relative;
+    top: 20px;
+    margin-top: 1em;
+    text-align: center;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px black;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+main div {
+    margin: 2.5em 0 5em 0;
+    border: 2px solid;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px;
+}
+
+main div h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Acme', sans-serif;
+}
+
+main div form {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+main div form p {
+    display: flex;
+    flex-wrap: col nowrap;
+    margin: 1em 0;
+}
+
+main div form label {
+    text-align: left;
+    width: 30%;
+}
+
+main div form input {
+    width: 100%;
+}
+
+main div form input[type='submit'] {
+    width: 60%;
+    margin: 1em auto;
+    padding: 5px 0;
+    background-color: lightgreen;
+}
+
+main div#register-user span {
+    font-size: 12px;
+    text-align: center;
+}

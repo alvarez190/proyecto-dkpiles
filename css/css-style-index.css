@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+body>h1 {
+    display: none;
+}
+
+header {
+    top: 0;
+    position: sticky;
+}
+
+main section.clima,
+main div.bt-socio img {
+    display: none;
+}
+
+main section.content h1 {
+    font-family: 'Lemonada', cursive;
+    text-align: center;
+}
+
+main section.content hr {
+    margin: 0.3em 0;
+    padding: 3px;
+    background-color: black;
+}
+
+main section.content h3 {
+    text-align: center;
+}
+
+main section.content p {
+    text-align: justify;
+}
+
+main section.content a {
+    display: inline-block;
+    text-align: center;
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 1.5em;
+    border-radius: 10px;
+    margin: 0.5em 0;
+}
+
+main section #a1 {
+    background-image: url("../img/logos/JPG/concepto-climas-lifeder-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main #a2 {
+    background-image: url("../img/photos/zip2/DSC_0104.JPG");
+    background-repeat: inherit;
+}
+
+main #a3 {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(342deg, rgba(2, 0, 36, 1) 0%, rgba(189, 113, 36, 1) 53%, rgba(0, 212, 255, 1) 100%);
+    margin-bottom: 3em;
+}
+
+div#container-carrucel {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    body>h1 {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 45px;
+    }
+    main section.clima,
+    main div.bt-socio img {
+        display: block;
+    }
+    main section.content #a1,
+    main section.content #a2 {
+        display: none;
+    }
+    main section.content #a3 {
+        margin: 0;
+        background: rgb(44, 38, 145);
+        background: linear-gradient(216deg, rgba(44, 38, 145, 1) 21%, rgba(151, 200, 196, 1) 67%);
+    }
+    main section.content div.bt-socio {
+        display: flex;
+        margin: 2em 0;
+    }
+    main section.content div.bt-socio img {
+        width: 100px;
+        height: 100px;
+        margin: 0 4em;
+    }
+    main section.content {
+        margin-right: 1em;
+    }
+    main section.content>h1,
+    main section.content>h3 {
+        display: none;
+    }
+    main section.clima a {
+        display: inline-block;
+        border: 1px solid black;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        padding: 1rem 0;
+        text-decoration: none;
+    }
+    main section.clima a:hover {
+        background-color: rgba(0, 0, 0, 0.822);
+    }
+    main section.clima div {
+        border: 1px solid black;
+        padding: 1em;
+    }
+    div#container-carrucel {
+        display: block;
+        margin: 1.5em 0;
+    }
+    div#container-carrucel div.controles button {
+        height: 25px;
+    }
+    .carousel {
+        margin: 0 auto;
+        display: flex;
+        max-width: 1020px;
+    }
+    .carousel button {
+        width: 55px;
+        border: 0;
+    }
+    .carousel button:hover {
+        color: white;
+        background-color: black;
+        transition: all 0.3s;
+    }
+    #imagen {
+        width: 100%;
+        height: 400px;
+        background-size: 100% 400px;
+    }
+    div.controles {
+        margin-top: 0.5em;
+        text-align: center;
+    }
+    div.controles button {
+        width: 100px;
+    }
+}

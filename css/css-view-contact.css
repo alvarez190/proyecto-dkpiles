@@ -1,0 +1,58 @@
+main section h2 {
+    text-align: center;
+    margin: 1em 0;
+    text-decoration: underline;
+}
+
+main #form-contact span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 1em 0;
+}
+
+main section form {
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 2em;
+    box-shadow: 4px 4px 4px black;
+}
+
+main section form p {
+    display: flex;
+    flex-wrap: col nowrap;
+    margin: 1em 0 0 0;
+}
+
+main section form label {
+    text-align: center;
+    margin: 0 1em 0 0;
+}
+
+main section form input {
+    width: 90%;
+}
+
+main section form textarea {
+    width: 80%;
+}
+
+main section form input[type='submit'] {
+    width: 60%;
+    margin: 1em auto;
+    padding: 5px 0;
+    background-color: lightgreen;
+}
+
+@media (min-width: 992px) {
+    main {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    main section {
+        width: 100%;
+        margin: 1em;
+    }
+}

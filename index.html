@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/css-layout.css">
+    <link rel="stylesheet" href="./css/css-style-index.css">
+    <link href="./css/hamburgers.css" rel="stylesheet">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo-gruop" src="./img/logos/PNG/DK_PilesX.png" alt="logo_dkpiles dkpiles logos"></a>
+
+        <ul class="" id="menu">
+            <span id="access-movil" class="fa fa-user fa-4x"><a href="./views/view-login-register.html">Acceder</a></span>
+            <li> <a href="index.html"><i class="fa fa-home"></i> Inicio</a> </li>
+            <li><a href="./views/view-aboutDKPiles.html"><i class="fa fa-info-circle"></i>  Sobre nosotros</a></li>
+            <li>
+                <a href="./views/view-multimedia.html"> <i class="fa fa-picture-o"></i> Multimedia</a>
+            </li>
+            <li><a href="./views/view-noticeAndEvents.html"><i class="fa fa-calendar-check-o"></i> Noticias y eventos</a> </li>
+            <li> <a href="./views/view-contact.html"><i class="fa fa-address-book-o"></i> Contactanos</a></li>
+            <li><a href="./views/view-climate.html"><i class="fa fa-thermometer-half"></i> El tiempo</a></li>
+
+            <label id="img-user-default"><a href="./views/view-login-register.html"><i class="fa fa-user fa-2x"></i> <br> Acceder</a></label>
+        </ul>
+
+        <button class="hamburger hamburger--collapse " type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+    </header>
+    <h1>Bienvenido al grupo nautico DK Piles</h1>
+    <main>
+        <section class="content">
+            <h1>Bienvenid@ al grupo DK Piles</h1>
+            <hr>
+            <br>
+            <h3>informacion meteorologica del dia</h3>
+            <a id="a1" href="./views/view-climate.html">Pulsa para mas informacion</a>
+
+            <p>Aqui podras hechar un vistazo a las diversas actividad que se realizan en el club. Para ver todas las imagenes clickea sobre la imagen.</p>
+            <a id="a2" href="./views/view-multimedia.html">Galeria &nbsp; <i class="fa fa-picture-o"></i> </a>
+
+            <div id="container-carrucel">
+                <div class="carousel">
+                    <button id="retroceder"><i class="fa fa-arrow-left fa-2x"></i></button>
+                    <div id="imagen"></div>
+                    <button id="avanzar"><i class="fa fa-arrow-right fa-2x"></i></button>
+                </div>
+                <div class="controles">
+                    <button id="play"><i class="fa fa-play"></i></button>
+                    <button id="stop" disabled><i class=" fa fa-stop"></i></button>
+                </div>
+            </div>
+
+            <p>Quieres formar parte de nuestro club y experimentar nuevas aventuras, junto a personas con la misma pasion del deporte acuatico. Si es asi solo pulsa en el siguiente boton y completa el formulario.</p>
+            <div class="bt-socio"><img src="./img/logos/PNG/1674704.png" alt="formulario imagen-formulario"> <a id="a3" href="./views/view-login-register.html"><i class="fa fa-file-text-o"></i> &nbsp; Acceso socios</a></div>
+
+        </section>
+        <section class="clima">
+            <a id="a1" href="#">Click aqui para mas informacion</a>
+            <div>
+                <script id="wg_fwdg_504236_100_1612905116948">
+                    (function(window, document) {
+                        var loader = function() {
+                            var arg = ["s=504236", "m=100", "mw=46", "uid=wg_fwdg_504236_100_1612905116948", "wj=knots", "tj=c", "waj=m", "odh=0", "doh=24", "fhours=240", "hrsm=2", "vt=forecasts", "lng=es", "idbs=1", "ts=1", "p=WINDSPD,GUST,SMER,TMPE,FLHGT,CDC,APCP1s,RATING"];
+                            var script = document.createElement("script");
+                            var tag = document.getElementsByTagName("script")[0];
+                            script.src = "https://www.windguru.cz/js/widget.php?" + (arg.join("&"));
+                            tag.parentNode.insertBefore(script, tag);
+                        };
+                        window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+                    })(window, document);
+                </script>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="">DK Piles 2021</a>
+        <span><a href="">Aviso Legal</a> || <a href="">Contacto</a></span>
+        <div class="red-socials">
+            <span>Polígono 02, 44, 46712 Piles, Valencia</span>
+        </div>
+    </footer>
+    <div id="cookies">
+        <p>Este sitio hace uso de cookies propias y de terceros para mejorar tu experiencia y cuantificar tus interacciones con nuestro sitio. Ninguna de estas tecnologias compromete tu informacion de caracter personal. Si te parece bien da click en "Aceptar"
+            y si deseas saber mas sobre las cookies da click en "Saber mas".
+        </p>
+        <button class="answer">Aceptar</button> <button class="info">Saber mas.</button>
+    </div>
+
+    <!-- Imagenes para el carrucel insertadas como evitar parpadeo en el cambio de imagen -->
+    <img src='./img/photos/zip1/DSC_0061.JPG' style="display: none;" />
+    <img src='./img/photos/zip1/DSC_0080.JPG' style="display: none;" />
+    <img src='./img/photos/zip1/DSC_0103.JPG' style="display: none;" />
+    <img src='./img/photos/zip1/DSC_0181.JPG' style="display: none;" />
+    <img src='./img/photos/zip1/DSC_0232.JPG' style="display: none;" />
+    <img src='./img/photos/zip1/mar.jpg' style="display: none;" />
+    <img src='./img/photos/zip1/playa.jpg' style="display: none;" />
+    <img src='./img/photos/zip2/DSC_0037.JPG' style="display: none;" />
+    <img src='./img/photos/zip2/DSC_0040.JPG' style="display: none;" />
+    <img src='./img/photos/zip2/DSC_0104.JPG' style="display: none;" />
+    <img src='./img/photos/zip2/DSC_0132.JPG' style="display: none;" />
+    <img src='./img/photos/zip2/DSC_0225.JPG' style="display: none;" />
+    <img src='./img/photos/zip2/DSC_0318.JPG' style="display: none;" />
+    <img src='./img/photos/zip3/IMG_20200802_201649.jpg' style="display: none;" />
+    <img src='./img/photos/zip3/IMG_20200802_201657.jpg' style="display: none;" />
+    <img src='./img/photos/zip3/IMG_20200802_201820.jpg' style="display: none;" />
+    <img src='./img/photos/zip3/IMG_20200807_235301.jpg' style="display: none;" />
+
+    <script src="./js/script-carrusel.js"></script>
+    <script src="./js/script-index.js"></script>
+    <script src="./js/script-cookies.js"></script>
+</body>
+
+</html>

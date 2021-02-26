@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("../img/logos/JPG/fondo1.jpg");
+    background-size: cover;
+}
+
+header {
+    position: sticky;
+    height: 70px;
+    border-bottom: 1px solid white;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(216deg, rgba(2, 0, 36, 1) 0%, rgb(33, 33, 85) 73%, rgba(0, 212, 255, 1) 100%);
+    z-index: 600;
+}
+
+header>a img {
+    height: auto;
+    width: 130px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+header button.hamburger {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+
+/***/
+
+header ul {
+    width: 50%;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    color: white;
+    height: 100vh;
+    list-style: none;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(216deg, rgba(2, 0, 36, 1) 0%, rgba(33, 33, 85, 0.9042207792207793) 50%, rgba(0, 212, 255, 1) 100%);
+    z-index: 500;
+}
+
+header ul i {
+    margin-right: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header ul>span {
+    width: 100%;
+    padding: 0.5em 0.5em;
+    border-bottom: 1px solid white;
+}
+
+header ul>span a {
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+header ul li span {
+    padding: 0.9em 1.4em;
+}
+
+header ul li {
+    padding: 1em 0;
+    margin: 0px 5px 0 35px;
+}
+
+#img-user-default {
+    display: none;
+}
+
+main {
+    position: relative;
+    font-family: 16px;
+    padding: 0.5em;
+}
+
+footer {
+    font-size: 12px;
+    color: white;
+    padding: 1em 0.5em;
+    width: 100%;
+    bottom: 0;
+    background-color: #0a0a0a;
+    z-index: 500;
+}
+
+footer>a {
+    display: inline-block;
+    width: 100%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer>span {
+    margin: 0.5em 0;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+footer span a {
+    color: blue;
+}
+
+footer div span {
+    display: block;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+#cookies {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 2rem;
+    color: #998;
+    font-size: 13px;
+    background-color: #0a0a0a;
+    z-index: 1000;
+    text-align: center;
+}
+
+#cookies p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+#cookies button {
+    margin: 0 0.5em;
+    padding: 0.3em 1em;
+}
+
+
+/*** Vista PC/Tablet **/
+
+@media (min-width: 992px) {
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100px;
+        padding-right: 15px;
+    }
+    header>a img {
+        width: 200px;
+    }
+    header ul {
+        flex: auto;
+        list-style: none;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0;
+        right: 0;
+        visibility: visible;
+        opacity: 1;
+        height: 100%;
+        background: none;
+        align-items: center;
+        padding-left: 0.5em;
+    }
+    #access-movil {
+        display: none;
+    }
+    header ul li {
+        text-align: center;
+        margin: 0;
+        padding: 0 5px;
+    }
+    header ul li a {
+        font-size: 20px;
+        padding: 20px 5px;
+    }
+    header ul li a:hover {
+        background-color: rgba(154, 150, 182, 0.301);
+        border-radius: 5px;
+    }
+    main {
+        width: 75%;
+        margin: 0 auto;
+    }
+    #img-user-default {
+        display: block;
+        border-left: 2px solid white;
+        padding-left: 20px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    #img-user-default a:hover {
+        background-color: rgba(154, 150, 182, 0.301);
+        border-radius: 5px;
+    }
+    #img-user-default i {
+        border: 1px solid white;
+        padding: 5px;
+        margin: 2px;
+        border-radius: 5rem;
+    }
+    #img-user-default a {
+        text-decoration: none;
+        color: white;
+    }
+    header button.hamburger {
+        display: none;
+    }
+    footer {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 15px;
+    }
+    footer * {
+        margin: 0;
+    }
+    footer>a {
+        width: auto;
+    }
+    footer>span {
+        margin: 0;
+        width: auto;
+        padding: 0 5%;
+    }
+    footer div {
+        display: inline-block;
+        margin-top: 0;
+        width: auto;
+    }
+}
+
+@media (min-width: 1920px) {
+    header ul li {
+        text-align: center;
+        margin: 0;
+        padding: 0 50px;
+    }
+    #img-user-default {
+        border-left: 4px solid white;
+        padding-left: 50px;
+        margin-left: 50px;
+        text-align: center;
+    }
+    footer {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    footer * {
+        display: inline-block;
+    }
+}

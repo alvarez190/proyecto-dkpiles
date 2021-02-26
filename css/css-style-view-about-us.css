@@ -1,0 +1,50 @@
+header {
+    position: relative;
+}
+
+#arrow-up {
+    position: sticky;
+    width: 10%;
+    font-size: 50px;
+    padding: 5px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 0.2em;
+    background-color: lightblue;
+    top: 85%;
+    left: 5%;
+    z-index: 600;
+}
+
+main p {
+    padding: 0 15px;
+    margin-bottom: 0.5em;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main img {
+    margin: 0.5em 0;
+    width: 100%;
+    object-fit: cover;
+    padding: 0 15px;
+}
+
+main li {
+    padding: 0 20px;
+    margin: 0.5em 0;
+}
+
+main h3 {
+    position: sticky;
+    text-align: center;
+    top: 0px;
+    padding: 10px 0;
+    margin: 1em 0;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(216deg, rgba(2, 0, 36, 1) 0%, rgb(33, 33, 85) 62%, rgba(0, 212, 255, 1) 100%);
+    color: white;
+    z-index: 400;
+}
